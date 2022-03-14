@@ -1,0 +1,106 @@
+@import '../../app.component.sass'
+
+$primary-color: #202324
+$secondary-color: #db97ee
+
+.card
+  background-color: $primary-color
+  font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif
+  color: #fff
+
+  .card__nav__list
+    display: grid
+    grid-template-columns: 1fr
+    padding: 0
+
+  .card__nav__item:last-child
+    text-align: right
+
+  .card__nav__item--logo
+    background-color: transparent
+    padding: 10px
+    text-align: left
+    line-height: 0
+
+  .card__nav__image
+    width: 82px
+    height: auto
+    max-width: 82px
+
+  .card__nav__item--message
+    padding: 15px 10px
+    line-height: 18px
+    color: $secondary-color
+
+    .card__subtitle--pink
+      padding: 0
+      margin: 0
+
+    .card__copy--small
+      font-size: 0.8rem
+
+  .card__header
+    background-color: $secondary-color
+    color: #202324
+    font-weight: 400
+    .card__lead
+      padding: 20px
+      .card__copy--header
+        display: block
+        line-height: 29.9px
+        font-size: 1.5rem
+
+    .card__figure
+      margin: 5px 0px auto
+      line-height: 1rem
+      text-align: right
+      .card__image
+        width: 300px
+        height: auto
+        max-width: 395px
+
+  .card__body
+    .card__block
+    .card__block--background-black
+      text-align: center
+      .card__subtitle--pink
+        color: $secondary-color
+      .card__copy--fuchsia
+        color: #c95683
+
+    .card__block--background-purple
+      background-color: $secondary-color
+      .card__subtitle, .card__copy
+        color: #000
+        line-height: 18px
+      .card__subtitle
+        padding: 20px 10px 5px 10px
+      .card__copy
+        padding: 5px 10px 20px 10px
+
+      .card__figure
+        padding: 20px
+        text-align: center
+        .card__image
+          width: 80px
+          height: auto
+          max-width: 79px
+
+  .card__footer
+    text-align: center
+    .card__subtitle--pink
+      color: $secondary-color
+    .card__copy--fuchsia
+      color: #c95683
+    .card__copy--pink
+      color: $secondary-color
+
+/* Media Queries */
+// Small and large tablets, laptops and desktop styles */
+@media screen and (min-width: 620px)
+  .card
+    background-color: #fff
+
+  .card__nav__list
+    display: grid
+    grid-template-columns: 1fr
